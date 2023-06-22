@@ -23,6 +23,7 @@ return [
             ErrorResponseGenerator::class => Container\WhoopsErrorResponseGeneratorFactory::class,
             'Mezzio\Whoops'               => Container\WhoopsFactory::class,
             'Mezzio\WhoopsPageHandler'    => Container\WhoopsPageHandlerFactory::class,
+            \Psr\Log\LoggerInterface::class => '',
         ],
     ],
     'whoops'       => [

@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App;
 
+use rollun\logger\Middleware\Factory\RequestLoggedMiddlewareFactory;
+
 /**
  * The configuration provider for the App module
  *
@@ -33,7 +35,7 @@ class ConfigProvider
         return [
             'invokables' => [
                 Handler\PingHandler::class => Handler\PingHandler::class,
-                Handler\HelloWorldHandler::class => Handler\HelloWorldHandler::class,
+                Handler\HelloWorldPageHandler::class => Handler\HelloWorldPageHandler::class,
             ],
             'factories'  => [
                 Handler\HomePageHandler::class => Handler\HomePageHandlerFactory::class,
